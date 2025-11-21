@@ -1,0 +1,277 @@
+
+/* HEADER START */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.site-header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.site-header .main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tagline {
+  text-align: left;
+  padding: 20px;
+  font-size: 40px;
+}
+
+.tagline2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+
+.highlight1 {
+  color: red;
+  font-weight: bold;
+}
+
+.Canva {
+  color: aqua;
+  font-weight: bold;
+}
+
+.Pro {
+  color: yellow;
+  font-weight: bold;
+}
+
+.site-header .main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sosmed-icons img {
+  width: 50px;
+  margin: 0 5px;
+}
+
+/* HEADER END */
+
+/* MAIN START */
+
+.section-title {
+  text-align: center;
+  font-weight: bold;
+  margin: 40px 0;
+  position: relative;
+}
+
+.section-title h2 {
+  display: inline-block;
+  padding: 0 20px;
+  background: white;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: black;
+  z-index: 1;
+}
+
+.canva-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.button-claim {
+  display: inline;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.button-claim-blue:hover {
+  background-color: blue;
+}
+
+.button-claim {
+  display: inline;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.button-claim-red:hover {
+  background-color: red;
+}
+
+.button-claim {
+  display: inline;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.button-claim-yellow:hover {
+  background-color: yellow;
+}
+
+.shadow-blue {
+  max-width: 300px;
+  text-align: center;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px blue;
+  background: white;
+  animation: glow-blue 1s infinite;
+}
+
+.shadow-red {
+  max-width: 300px;
+  text-align: center;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px red;
+  background: white;
+  animation: glow-red 1s infinite;
+}
+
+.shadow-yellow {
+  max-width: 300px;
+  text-align: center;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px yellow;
+  background: white;
+  animation: glow-yellow 1s infinite;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@keyframes glow-blue {
+  0% {
+    box-shadow: 0 0 5px blue;
+  }
+  50% {
+    box-shadow: 0 0 20px cyan;
+  }
+  100% {
+    box-shadow: 0 0 5px blue;
+  }
+}
+
+@keyframes glow-red {
+  0% {
+    box-shadow: 0 0 5px rgb(255, 51, 0)
+  }
+  50% {
+    box-shadow: 0 0 20px red
+  }
+  100% {
+    box-shadow: 0 0 5px rgb(255, 51, 0)
+  }
+}
+
+@keyframes glow-yellow {
+  0% {
+    box-shadow: 0 0 5px rgb(195, 0, 255);
+  }
+  50% {
+    box-shadow: 0 0 20px rgb(255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 5px rgb(187, 0, 255);
+  }
+}
+
+/* MAIN END */
+
+@media (max-width: 600px) {
+  .tagline {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 24px;
+  }
+}
+
+/* FOOTER START */
+
+.site-footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  /* border-top: 3px solid #ff0000; */
+}
+
+.site-footer a {
+  color: cyan;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+/* FOOTER END */
